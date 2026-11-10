@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Sorry ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <audio id="bgMusic" src="song.mp3" preload="auto"></audio>
+
+  <!-- PAGE 1: LETTER -->
+  <section id="page1" class="page active first-page">
+
+    <div class="character">
+      <img src="cc1.gif" alt="Cute character">
+    </div>
+
+    <h1>BABYY!</h1>
+    <p class="subtitle">Maine tumhare liye kuch banaya hai🥺🎀</p>
+
+    <div class="letter-area">
+      <div class="ribbon">♡</div>
+
+      <div class="rolled-letter" id="letter">
+        <div class="letter-content">
+          <h2>Manasvi </h2>
+
+          <p>
+            Babyyy itna nahi naraz hotee😭.And sollyyy agar apko meri kisi bhi baat ka bura laga hoo🥺🎀
+          </p>
+
+          <p>
+            Aap toh meri jaan ho aur meri jaan mujhse ruth jayegi toh mera kya hoga🥺🥺
+          </p>
+
+          <p>
+            Apne is nachiz naukar ko maaf karo aur mann jao 😋
+          </p>
+
+          <p class="signature">
+            Micchami Dukkdam🥺<br>
+            yours gulam
+            Vaidikkkkk😋🎀
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button id="openBtn" onclick="openLetter()">
+      open it🥺🎀
+<!-- SECOND OPTION: FUNNY NO PAGE -->
+<section id="q2b" class="page question-page">
+
+  <div class="content-card response-card">
+
+    <img src="cc2.gif" class="response-character">
+
+    <h1>HATT! 😤</h1>
+
+    <h2>Wapis jaa aur YES kar! 😭❤️</h2>
+
+    <p>Wrong answer detected! 😂</p>
+
+    <button onclick="goTo('page3')">
+      ← GO BACK
+    </button>
+
+  </div>
+
+</section>
+
+    </button>
+
+    <button id="letterNext" class="hidden"
+      onclick="goTo('page2')">
+      NEXT →
+    </button>
+
+  </section>
+
+
+  <!-- PAGE 2: QUESTION 1 -->
+  <section id="page2" class="page question-page">
+
+    <img src="cc2.gif" class="question-character">
+
+    <div class="content-card">
+      <p class="small-heading">A LITTLE QUESTION 💗</p>
+
+      <h2>Abhi bhi Guccha ho??🥺🎀</h2>
+
+      <p>I hope not... 🥺</p>
+
+      <button class="option" onclick="answer('q1a')">
+        Nahi, jaa maaf kiya 😒🎀
+      </button>
+
+      <button class="option" onclick="answer('q1b')">
+        Hn hu 😡🎀
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- RESPONSE 1 -->
+  <section id="q1a" class="page question-page">
+    <div class="content-card response-card">
+      <h1>Pakka??🥺🎀</h1>
+      <p>sachi muchi maaf kiya ?🥺🎀</p>
+      <img src="cc2.gif" class="response-character">
+      <button onclick="goTo('page3')">Hn🙄🎀</button>
+    </div>
+  </section>
+
+  <section id="q1b" class="page question-page">
+    <div class="content-card response-card">
+      <h1>Aleeee yaarrrr!🥺🥺🎀</h1>
+      <p>Maan jao na babyy🥺🎀</p>
+      <img src="cc2.gif" class="response-character">
+      <button onclick="goTo('page3')">Thik hai mann gyi 🙄(dusra koi option hi nahi dunga 😋🎀)</button>
+    </div>
+  </section>
+
+
+  <!-- PAGE 3: QUESTION 2 -->
+  <section id="page3" class="page question-page">
+
+    <img src="cc2.gif" class="question-character">
+
+    <div class="content-card">
+      <p class="small-heading">Ek aur chiz 😋</p>
+
+      <h2>Do you love me ?😋🎀💖</h2>
+
+      <p> Um Um???🤭🤭</p>
+
+      <button class="option" onclick="answer('q2a')">
+      Yes!!Vaidik baby I LOVE YOU 🤗🎀💖
+      </button>
+
+      <button class="option" onclick="answer('q2b')">
+        No🙄🎀(ispe click kiya toh chata maar dunga 😠🎀)
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- RESPONSE 2 -->
+  <section id="q2a" class="page question-page">
+    <div class="content-card response-card">
+      <h1> 😋</h1>
+      <p>I LOVE YOU MORE JAANU😘😋💖🎀✨</p>
+      <img src="cc5.png" class="response-character">
+      <button onclick="goTo('finalPage')">ONE LAST THING →</button>
+    </div>
+  </section>
+
+  
+<!-- SECOND OPTION: FUNNY NO PAGE -->
+<section id="q2b" class="page question-page">
+
+  <div class="content-card response-card">
+
+    <img src="cc4.jpg" class="response-character">
+
+    <h1>HATT! 😤</h1>
+
+    <h2>Wapis jaa aur YES kar!😠</h2>
+
+    <p>Lagau ek 😠👋🏻</p>
+
+    <button onclick="goTo('page3')">
+      ← GO BACK
+    </button>
+
+  </div>
+
+</section>
+
+
+
+  <!-- FINAL PAGE -->
+  <section id="finalPage" class="page final-page">
+
+    <img src="cc3.jpg" class="final-character">
+
+    <div class="content-card">
+      <p class="small-heading">JUST FOR YOU ✨</p>
+
+      <h1>One Last Thing...</h1>
+
+      <p>
+        BABYY mai chutiya jaisa karta rehta hu tumhe gussa dilata rehta hu shyad aage bhi dila du toh is tarah apka babyy apka shona samjh kar maaf kar dena aur mann jana 🥺🎀
+      </p>
+
+      <h2 class="final-message">
+        Okay Jannu?😋🎀
+      </h2>
+
+      <p>i hope tumhe yeh sab pasand aaya ho chal ab jaldi WhatsApp par aakar kissy de 😘😋🎀</p>
+
+    </div>
+
+    <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
